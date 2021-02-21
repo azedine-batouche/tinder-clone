@@ -1,3 +1,4 @@
+
 import React, {useState, useEffect } from 'react';
 import "./TinderCard.css";
 import database from "./firebase";
@@ -11,6 +12,7 @@ function TinderCard() {
     
 
     const [people, setPeople] = useState([
+
         // {
         // name: 'steve job',
         // url: 'https://belgium-iphone.lesoir.be/wp-content/uploads/sites/73/2015/02/SteveJobsCloseUp.jpg'
@@ -29,11 +31,14 @@ function TinderCard() {
                  setPeople(
             snapshot.docs.map((doc) => doc.data())))
     }, []);
+
     return (
       
         <div>
             <h2>Tinder cards</h2>
+
               <div className="tinderCards__container">
+
             {people.map(person=> (
                 <TinderCards
                 className="swipe"
