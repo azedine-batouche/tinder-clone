@@ -26,16 +26,19 @@ function TinderCard() {
     useEffect(() => {
 
 
-        database.collection("people")
+    const unsubscrible =   database.collection("people")
                 .onSnapshot((snapshot) =>
                  setPeople(
-            snapshot.docs.map((doc) => doc.data())))
+            snapshot.docs.map((doc) => doc.data())));
+
+            return () => {
+                unsubscrible();
+            }
     }, []);
 
     return (
       
         <div>
-            <h2>Tinder cards</h2>
 
               <div className="tinderCards__container">
 
@@ -44,6 +47,8 @@ function TinderCard() {
                 className="swipe"
                 key={person.name}
                 preventSwipe={['up','down']}
+       
+                
                 >
                     <div 
                     style={{ backgroundImage: `url(${person.url})`}}
