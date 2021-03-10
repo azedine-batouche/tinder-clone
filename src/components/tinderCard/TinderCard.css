@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  max-width: 85vw;
+  height: 65vh;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 18px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.card > h3 {
+  position: absolute;
+  bottom: 60px;
+  color: #fff;
+}
+.tinderCards__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.swipe {
+  position: absolute;
+}
+.cardLocation {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: #fff;
+}
+.cardLocation__city,
+.cardLocation__distance {
+  display: flex;
+}
+.cardLocation__icon {
+  font-size: 20px !important;
+}
+.cardLocation__city > p,
+.cardLocation__distance > p {
+  align-self: flex-end;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.cardLocation__city {
+  padding-bottom: 5px;
+}

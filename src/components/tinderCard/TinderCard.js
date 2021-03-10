@@ -1,8 +1,10 @@
 
 import React, {useState, useEffect } from 'react';
 import "./TinderCard.css";
-import database from "./firebase";
+import database from "../../firebase";
 import TinderCards from "react-tinder-card";
+import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 
 
@@ -53,8 +55,20 @@ function TinderCard() {
                     <div 
                     style={{ backgroundImage: `url(${person.url})`}}
                     className="card">
-                        <h3>{person.name}</h3>
+                        <h3>{person.name} {person.age}</h3>
+
                     </div>
+                    <div className="cardLocation">
+                        <div className="cardLocation__city">
+                            <HomeOutlinedIcon className="cardLocation__icon"/>
+                            <p>Vit ici : Paris</p>
+                        </div>
+                        <div className="cardLocation__distance">
+                            <LocationOnOutlinedIcon className="cardLocation__icon "/>
+                            <p>à 9Km</p>
+                        </div>
+                    </div>
+                  
                 </TinderCards>
             ))}
         </div>

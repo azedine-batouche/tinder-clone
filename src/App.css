@@ -1,0 +1,30 @@
+/* @media (min-width: 600px) {
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fe3c72;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

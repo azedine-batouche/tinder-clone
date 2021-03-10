@@ -1,16 +1,19 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   border-bottom: 1px solid #f9f9f9;
 }
 
 .header__logo {
-  height: 40px;
+  height: 30px;
   object-fit: contain;
-  width: 60px;
+  /* width: 60px; */
 }
 
 .header__icon {
   padding: 20px;
+}
+.like__icon:visited {
+  color: goldenrod;
 }
