@@ -4,6 +4,7 @@ import React   from 'react'
 import  Header  from "./components/header/Header";
 import TinderCard from "./components/tinderCard/TinderCard";
 import SwipeButtons from "./components/swipeButtons/SwipeButtons";
+
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chats from "./components/chats/Chats";
 import ChatScreen from "./components/ChatScreen/ChatScreen";
@@ -38,7 +39,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
     </div>
   );
 }
