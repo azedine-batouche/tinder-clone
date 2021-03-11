@@ -2,18 +2,18 @@ import React, {useEffect, useState} from 'react';
 import './Chats.css';
 import Chat from '../chat/Chat';
 import Match from '../match/Match';
-import database from "../../firebase";
+import Database from "../../firebase";
 
 function Chats() {
     
-    const [matchs, setMtachs] = useState([]);
+    const [matchs, setMatchs] = useState([]);
     let nbMatchs = 0;
     let nbMessage = 0;
     
     useEffect(() => {
-        const unsubscrible = database.collection("matchs")
+        const unsubscrible = Database.collection("matchs")
             .onSnapshot((snapshot) => {
-                setMtachs(snapshot.docs.map((doc) => doc.data()))
+                setMatchs(snapshot.docs.map((doc) => doc.data()))
 
             });
         return () => {

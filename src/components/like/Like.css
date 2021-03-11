@@ -1,0 +1,48 @@
+.like__ctn {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 48%;
+  border-radius: 10px;
+  min-height: 300px;
+  margin: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.like__img {
+  margin: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: blur(15px);
+}
+.like__detail {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+.like__statu {
+  text-align: center;
+}
+.like__online {
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: greenyellow;
+}
+.like__ontline {
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: red;
+}

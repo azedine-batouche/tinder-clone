@@ -9,6 +9,7 @@ import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chats from "./components/chats/Chats";
 import ChatScreen from "./components/ChatScreen/ChatScreen";
 import Profil from "./components/profil/Profil";
+import Likes from "./components/likes/Likes";
 
 
 function App() {
@@ -27,10 +28,13 @@ function App() {
         <Header backbutton="/"/>
           <Chats />
           </Route>
+          <Route path="/likes">
+            <Header/>
+            <Likes/>
+          </Route>
           <Route path="/profil">
             <Header/>
             <Profil/>
-
           </Route>
           <Route path="/">
             <Header/>
