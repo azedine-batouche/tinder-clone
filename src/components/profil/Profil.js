@@ -1,4 +1,4 @@
-import React,  {useState, useEffect } from 'react';
+import React from 'react';
 import './Profil.css';
 import IconButton from '@material-ui/core/IconButton';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
@@ -8,33 +8,8 @@ import AddIcon from '@material-ui/icons/Add';
 import CreateIcon from '@material-ui/icons/Create';
 
 function Profil() {
-    let timeLeft = {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-    };
-    const [counter, setCounter] = useState(3600);
-    const [state, setState] = useState({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-    });
 
-    useEffect(() => {
-        const timer =
-            counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
-    // counter > 60 && setInterval(() =>  setState.minutes(counter -1000), 60000);
-    timeLeft = {
-        days: Math.floor(counter / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((counter / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((counter / 1000 / 60) % 60),
-        seconds: Math.floor((counter / 1000) % 60)
-      };
-      return () => clearInterval(timer);
-      }, [counter]);
-    return (
+      return (
     <div className="profil__ctn">
         <div className="profil__header">
                 <div >
@@ -92,7 +67,7 @@ function Profil() {
                     </div>
                 <h4><b><i>50% DE REMISE LES 3 PERMIERS MOIS</i></b></h4>
                 <IconButton className="premium__button">PASSER A TINDER GOLD</IconButton>
-                    <p className="profil__timestamp">Se termine dans { Math.floor(counter/3600) }HH{Math.floor( Math.floor((14400 - (Math.floor(counter/3600)* 3600))/60)-1) }MM{counter}SS</p>
+                    <p className="profil__timestamp">Se termine dans 03:59:16</p>
                 </div>
             </div>             
      </div>
