@@ -21,6 +21,7 @@ import WhatshotIcon from '@material-ui/icons/Whatshot';
              <Link to="/likes">
               <IconButton >
                   <StarIcon  fontSize="large" className="header__icon " />
+
               </IconButton>
             </Link>
 

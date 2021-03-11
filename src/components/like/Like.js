@@ -4,6 +4,7 @@ import "./Like.css";
 
 function Like({ online, status, url }) {
 
+
     return (
         <div className="like__ctn" >
             <img src={url} className="like__img" alt="Photo_like" />
