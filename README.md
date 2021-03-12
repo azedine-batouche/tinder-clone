@@ -2,7 +2,7 @@
 
 this project was a tinder clone using react technologie and firebase to save the data
 
-## Screenshop
+## Screenshot
 
 You can see the final result of the project who it look like :
 
